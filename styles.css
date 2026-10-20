@@ -420,3 +420,28 @@ body {
   border-radius: 10px;
   z-index: 200;
 }
+
+/* Enhanced Mobile Responsiveness (Smartphones, Android, iOS) */
+@media (max-width: 640px) {
+  .topbar-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .brand {
+    justify-content: space-between;
+  }
+  .feed-tabs {
+    justify-content: center;
+  }
+  .user-switcher {
+    justify-content: space-between;
+  }
+  .composer-footer {
+    flex-direction: column;
+  }
+  .post-actions {
+    justify-content: space-between;
+  }
+}
+
