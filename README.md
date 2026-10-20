@@ -1,26 +1,47 @@
 # CodeAlpha_SocialMediaPlatform (Task 2: Social Media Platform)
 
-Full-Stack Mini Social Media Application built for the **CodeAlpha Full Stack Development Internship (Task 2)**.
+> **CodeAlpha Full Stack Development Internship — Task 2**  
+> 🔗 **Live Demo (Open on any device):** [https://khaith41.github.io/CodeAlpha_SocialMediaPlatform/](https://khaith41.github.io/CodeAlpha_SocialMediaPlatform/)
+
+---
+
+## 📱 Cross-Device & Responsive Support
+This application is designed with responsive mobile-first architecture:
+- **Mobile Phones (Android & iOS):** Single-column streamlined feed with touch-friendly actions.
+- **Tablets & iPads:** Adaptive multi-column layout with easy sidebar access.
+- **Laptops & Desktop PCs:** Modern 3-column dashboard (Profile + Feed + Creator Directory).
+
+---
 
 ## ✨ Features Implemented
-- **User Profiles**: View & edit display name, handle, bio, and avatar, plus live Post/Follower/Following counters and instant profile switching.
-- **Posts & Comments**: Create posts with text and optional media attachments, and reply with comments on any post.
-- **Like & Follow System**: Like/unlike posts with real-time counter updates, follow/unfollow creators, and switch between the **For You** and **Following** feeds.
+- **User Profiles**: View and edit display name, `@handle`, bio, and avatar. Displays live post counts, followers, and following metrics.
+- **Profile Switcher**: Instantly switch between multiple users (`Aarav Sharma`, `Sophia Chen`, `Liam Patel`) to test multi-user interactions.
+- **Post Composer & Media**: Create new posts with text and optional media/image URLs.
+- **Comment System**: Nested commenting on any post with instant UI updates and author attribution.
+- **Like & Follow System**: Heart/like toggle with live like counter, follow/unfollow creators, and toggle between **"For You"** (all creators) and **"Following"** feeds.
+- **Hybrid Storage & Auto-Fallback**: Seamlessly works with the Express.js REST API or directly in browser via persistent `localStorage`.
+
+---
 
 ## 🛠️ Tech Stack
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript (`public/index.html`, `public/styles.css`, `public/app.js`)
+- **Frontend**: HTML5, CSS3 (Modern Glassmorphism & Responsive Grid), Vanilla JavaScript ES6+
 - **Backend**: Node.js & Express.js (`server.js`)
-- **Database**: Persistent JSON Store (`database.json`) for Users, Posts, Comments, and Followers
+- **Database**: Persistent JSON Store (`database.json`) for Users, Posts, Comments, and Follower relationships
+- **Hosting**: GitHub Pages (Live Demo) & Express.js REST API
 
-## 🚀 How to Run
+---
 
-### Option 1: Run Full-Stack with Node.js & Express
+## 🚀 How Evaluators Can Test This Project
+
+### Method 1: Instant Live Evaluation (No Installation Needed)
+Click the live link on any smartphone, tablet, or PC:  
+👉 **[https://khaith41.github.io/CodeAlpha_SocialMediaPlatform/](https://khaith41.github.io/CodeAlpha_SocialMediaPlatform/)**
+
+### Method 2: Local Full-Stack with Node.js
 ```bash
+git clone https://github.com/Khaith41/CodeAlpha_SocialMediaPlatform.git
 cd CodeAlpha_SocialMediaPlatform
 npm install
 npm start
 ```
-Then open `http://localhost:4000` in your browser.
-
-### Option 2: Instant Browser Preview (Zero Setup)
-Open `public/index.html` directly in any web browser. The frontend automatically falls back to `localStorage` persistence if the Express server is not running.
+Then visit `http://localhost:4000` in your web browser.
